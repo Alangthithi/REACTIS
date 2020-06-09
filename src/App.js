@@ -9,7 +9,7 @@ class App extends Component {
     this.todoItem = [
       { title: 'Học Anh Văn', isComplete: true },
       { title: 'Học PHP', isComplete: false },
-      { title: 'Học React' }
+      { title: 'Học ReactJS' }
     ];
   }
 
