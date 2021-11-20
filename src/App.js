@@ -1,25 +1,14 @@
-import React, { Component } from 'react';
-import classNames from 'classnames';
-import './App.css';
-import TodoItem from './Components/TodoItem'
+import React from "react";
+import UseCallback from "./Components/UseCallback";
+import UseMemo from "./Components/UseMemo";
 
-class App extends Component {
-  constructor() {
-    super();
-    this.todoItem = [
-      { title: 'Học Anh Văn', isComplete: true },
-      { title: 'Học PHP', isComplete: false },
-      { title: 'Học ReactJS' }
-    ];
-  }
-
-  render() {
-    return (
-      <div className="App">
-        {this.todoItem.map((item, index) => <TodoItem key={index} item={item} />)}
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      {/* <UseMemo /> */}
+      <UseCallback />
+    </div>
+  );
 }
 
 export default App;
